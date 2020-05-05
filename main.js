@@ -23,9 +23,7 @@ window.addEventListener("scroll", function(){
     
     if(size >= window.innerWidth / 2){
         grow = false;
-    }
-
-    if(size <= window.innerWidth / 8){
+    } else if(size <= window.innerWidth / 8){
         grow = true;
     }
 
