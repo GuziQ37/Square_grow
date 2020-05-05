@@ -11,7 +11,7 @@ square.style.height = size + "px";
 
 window.addEventListener("scroll", function(){
 
-    if(grow == true ){
+    if(grow){ // true 
         size += 5;
         square.style.height = size + "px";
         square.style.width = size + "px";
@@ -22,9 +22,9 @@ window.addEventListener("scroll", function(){
     }
     
     if(size >= window.innerWidth / 2){
-        grow = false;
+        grow = false; // zamiennie grow = !grow
     } else if(size <= window.innerWidth / 8){
-        grow = true;
+        grow = true; //grow = !grow
     }
 
 
